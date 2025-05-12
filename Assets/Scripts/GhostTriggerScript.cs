@@ -6,12 +6,7 @@ public class GhostTriggerScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && ghostChaseScript != null)
-        {
-            ghostChaseScript.StartChase();
-        }
-
-        Debug.Log("트리거에 닿은 오브젝트: " + other.name); // 디버그 출력
+        Debug.Log("트리거에 닿은 오브젝트: " + other.name);
 
         if (other.CompareTag("Player") && ghostChaseScript != null)
         {
